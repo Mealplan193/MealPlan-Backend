@@ -3,7 +3,7 @@ import csv
 import sqlite3
 from pathlib import Path
 
-from ml.preprocess import GROUPS
+from preprocess import GROUPS
 
 ROOT = Path(__file__).resolve().parent
 SCHEMA = ROOT / "schema.sql"
