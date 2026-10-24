@@ -129,11 +129,21 @@ def create_app(config=None):
         database.init_db(app.config["DB_PATH"])
 
     # --- model: train the fallback model on first run if no saved model exists
-    if not Path(app.config["MODEL_PATH"]).exists():
-       from train_model import train
-        train(model_path=app.config["MODEL_PATH"], meta_path=app.config["META_PATH"],
-              processed_dir=Path(app.config["TRAINING_CSV"]).parent, report_dir=ROOT / "reports", verbose=False)
-    clf = FoodClassifier(app.config["MODEL_PATH"], app.config["TRAINING_CSV"], app.config["META_PATH"])
+        if not Path(app.config["MODEL_PATH"]).exists():
+        from train_model import train
+        train(
+            model_path=app.config["MODEL_PATH"],
+            meta_path=app.config["META_PATH"],
+            processed_dir=Path(app.config["TRAINING_CSV"]).parent,
+            report_dir=ROOT / "reports",
+            verbose=False,
+        )
+
+    clf = FoodClassifier(
+        app.config["MODEL_PATH"],
+        app.config["TRAINING_CSV"],
+        app.config["META_PATH"],
+    )
     app.extensions["classifier"] = clf
 
     def db():
