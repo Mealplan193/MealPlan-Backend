@@ -1,0 +1,31 @@
+name,group,measure,calories,protein,carbs,fat,emoji
+Banana,Fruits,1 medium,105,1.3,27,0.4,🍌
+Apple,Fruits,1 medium,95,0.5,25,0.3,🍎
+Orange,Fruits,1 medium,62,1.2,15.4,0.2,🍊
+Mango,Fruits,1 cup,99,1.4,25,0.6,🥭
+Strawberries,Fruits,1 cup,49,1,12,0.5,🍓
+Broccoli,Vegetables,1 cup,55,3.7,11.2,0.6,🥦
+Carrot,Vegetables,1 medium,25,0.6,6,0.1,🥕
+Spinach,Vegetables,1 cup,7,0.9,1.1,0.1,🥬
+Tomato,Vegetables,1 medium,22,1.1,4.8,0.2,🍅
+Chicken breast,Protein,100 g,165,31,0,3.6,🍗
+Egg,Protein,1 large,72,6.3,0.4,4.8,🥚
+Salmon,Protein,100 g,208,20,0,13,🐟
+Tofu,Protein,100 g,76,8,1.9,4.8,◻️
+White rice,Grains and carbs,1 cup,205,4.3,44.5,0.4,🍚
+Brown rice,Grains and carbs,1 cup,216,5,45,1.8,🍚
+Oatmeal,Grains and carbs,1 cup,154,6,27,3.2,🥣
+Whole wheat bread,Grains and carbs,1 slice,81,4,14,1.1,🍞
+Milk,Dairy,1 cup,122,8,12,4.8,🥛
+"Yogurt, plain",Dairy,1 cup,149,8.5,11.4,8,🥣
+Cheddar cheese,Dairy,1 slice,113,7,0.4,9.3,🧀
+Almonds,Nuts and seeds,28 g,164,6,6.1,14.2,🥜
+Peanut butter,Nuts and seeds,2 tbsp,188,7,7,16,🥜
+Olive oil,Fats and oils,1 tbsp,119,0,0,13.5,🫒
+Avocado,Fats and oils,1/2 fruit,120,1.5,6.4,11,🥑
+Orange juice,Beverages,1 cup,112,1.7,25.8,0.5,🧃
+"Coffee, black",Beverages,1 cup,2,0.3,0,0,☕
+Potato chips,Snacks,28 g,152,2,15,10,🥔
+Dark chocolate,Desserts,30 g,170,2.2,13,12,🍫
+Vanilla ice cream,Desserts,1/2 cup,137,2.3,16,7,🍨
+"Popcorn, air-popped",Snacks,3 cups,93,3,19,1.1,🍿
