@@ -33,7 +33,7 @@ from sklearn.pipeline import Pipeline
 
 from preprocess import GROUPS, load_builtin, load_dataset, normalize_name
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent
 RAW_CSV = ROOT / "data" / "raw" / "nutrition.csv"
 BUILTIN_CSV = ROOT / "data" / "builtin_foods.csv"
 PROCESSED_DIR = ROOT / "data" / "processed"
