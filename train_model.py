@@ -31,7 +31,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 from sklearn.model_selection import GridSearchCV, LeaveOneOut, StratifiedKFold, cross_val_predict, train_test_split
 from sklearn.pipeline import Pipeline
 
-from ml.preprocess import GROUPS, load_builtin, load_dataset, normalize_name
+from preprocess import GROUPS, load_builtin, load_dataset, normalize_name
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW_CSV = ROOT / "data" / "raw" / "nutrition.csv"
