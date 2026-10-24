@@ -195,7 +195,8 @@ def create_app(config=None):
         return jsonify({"error": "Something went wrong on the server."}), 500
 
     # ------------------------------------------------------------ pages
-    @app.get("/")
+   
+@app.get("/")
 def index():
     return jsonify({
         "status": "ok",
