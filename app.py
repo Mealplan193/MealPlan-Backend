@@ -129,7 +129,9 @@ def create_app(config=None):
         database.init_db(app.config["DB_PATH"])
 
     # --- model: train the fallback model on first run if no saved model exists
-        if not Path(app.config["MODEL_PATH"]).exists():
+        
+    # --- model: train the fallback model on first run if no saved model exists
+    if not Path(app.config["MODEL_PATH"]).exists():
         from train_model import train
         train(
             model_path=app.config["MODEL_PATH"],
@@ -145,6 +147,7 @@ def create_app(config=None):
         app.config["META_PATH"],
     )
     app.extensions["classifier"] = clf
+
 
     def db():
         if "db" not in g:
