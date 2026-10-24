@@ -7,7 +7,7 @@ import joblib
 import pandas as pd
 from sklearn.base import clone
 
-from ml.preprocess import normalize_name
+from preprocess import normalize_name
 
 
 class FoodClassifier:
