@@ -13,8 +13,8 @@ from pathlib import Path
 from flask import Flask, g, jsonify, render_template, request
 
 import database
-from ml.classifier import FoodClassifier
-from ml.preprocess import GROUPS, normalize_name
+from classifier import FoodClassifier
+from preprocess import GROUPS, normalize_name
 
 ROOT = Path(__file__).resolve().parent
 ACTIVITY_FACTORS = {1.2, 1.375, 1.55, 1.725}
@@ -130,7 +130,7 @@ def create_app(config=None):
 
     # --- model: train the fallback model on first run if no saved model exists
     if not Path(app.config["MODEL_PATH"]).exists():
-        from ml.train_model import train
+       from train_model import train
         train(model_path=app.config["MODEL_PATH"], meta_path=app.config["META_PATH"],
               processed_dir=Path(app.config["TRAINING_CSV"]).parent, report_dir=ROOT / "reports", verbose=False)
     clf = FoodClassifier(app.config["MODEL_PATH"], app.config["TRAINING_CSV"], app.config["META_PATH"])
