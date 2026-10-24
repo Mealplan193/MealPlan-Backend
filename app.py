@@ -154,7 +154,7 @@ def create_app(config=None):
             g.db = database.connect(app.config["DB_PATH"])
         return g.db
 
-    @app.teardown_appcontext
+    app.teardown_appcontext
     def close_db(_exc):
         conn = g.pop("db", None)
         if conn is not None:
@@ -196,8 +196,11 @@ def create_app(config=None):
 
     # ------------------------------------------------------------ pages
     @app.get("/")
-    def index():
-        return render_template("index.html")
+def index():
+    return jsonify({
+        "status": "ok",
+        "service": "MealPlan Backend"
+    })
 
     # ------------------------------------------------------------ foods
     @app.get("/api/foods")
